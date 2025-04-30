@@ -26,7 +26,8 @@ provider "aws" {
     region = "us-east-1"
 }
 
-resurce "aws_instance" "my_ubuntu" {
+resource "aws_instance" "my_ubuntu" {
+    count = 2
     ami = "ami-084568db4383264d4"
     instance_type = "t2.micro"
 
