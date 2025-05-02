@@ -20,14 +20,8 @@
 
 
 
-provider "aws" {
-    access_key = "YOUR_AWS_PUBLIC_KEY"
-    secret_key = "YOUR_AWS_SECRET_KEY"
-    region = "us-east-1"
-}
-
 resource "aws_instance" "my_ubuntu" {
-    count = 2
+    count = 3
     ami = "ami-084568db4383264d4"
     instance_type = "t2.micro"
 
