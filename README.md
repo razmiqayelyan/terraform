@@ -53,7 +53,7 @@ This Terraform project provisions a **scalable, load-balanced web application** 
 
 1. Clone the repo
 
-git clone https://github.com/your-username/terraform-asg-webapp
+git clone https://github.com/razmiqayelyan/terraform
 cd terraform-asg-webapp
 
 2. Initialize Terraform
