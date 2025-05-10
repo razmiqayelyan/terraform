@@ -22,7 +22,7 @@
 resource "aws_instance" "my_webserver" {
   ami = "ami-084568db4383264d4"
   instance_type = "t2.micro"
-  vpc_security_group_ids = [ aws_security_group.my_webserver.id ]
+  vpc_security_group_ids = [ "sg-0a78a063c41e67482" ]
   tags = {
     Name = "MyTerraformUbuntu"
   }
